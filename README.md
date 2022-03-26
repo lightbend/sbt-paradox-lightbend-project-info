@@ -16,7 +16,7 @@ addSbtPlugin("com.lightbend.lightbend" % "sbt-paradox-lightbend-project-info" % 
 
 Since this is an auto-plugin that automatically triggers its already enabled when you include it as a dependency.
 
-## Releasing
+## Releasing 
 
 - Tag the commit you want to release and push it
 - Github actions should automatically release
