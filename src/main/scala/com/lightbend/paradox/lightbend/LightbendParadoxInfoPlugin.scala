@@ -21,18 +21,21 @@ import sbt._
 
 object LightbendParadoxInfoPlugin extends AutoPlugin {
   private def glossary(anchor: String, label: String): String =
-    s"""<a href="https://developer.lightbend.com/docs/introduction/getting-help/support-terminology.html#$anchor" target="_blank" rel="noopener">$label</a>""".stripMargin
+    s"""<a href="https://doc.akka.io/docs/akka-dependencies/current/support-terminology.html#$anchor" target="_blank" rel="noopener">$label</a>""".stripMargin
 
   case object Supported extends ReadinessLevel {
     val name =
       s"""${glossary(
           "supported",
           "Supported"
-        )}, <a href="https://www.lightbend.com/lightbend-subscription" target="_blank" rel="noopener">Lightbend Subscription</a> provides support"""
+        )}, support is available from <a href="https://www.lightbend.com/akka" target="_blank" rel="noopener">Lightbend</a>"""
   }
   case object Certified extends ReadinessLevel {
     val name =
-      s"""${glossary("certified", "Certified")} by <a href="https://www.lightbend.com/" target="_blank">Lightbend</a>"""
+      s"""${glossary(
+          "certified",
+          "Certified"
+        )} by <a href="https://www.lightbend.com/akka" target="_blank">Lightbend</a>"""
   }
   case object Incubating extends ReadinessLevel {
     val name = glossary("incubating", "Incubating")
