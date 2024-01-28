@@ -13,7 +13,7 @@ crossSbtVersions := List("1.4.9")
 organization     := "com.lightbend.paradox"
 name             := "sbt-paradox-lightbend-project-info"
 
-addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-project-info" % "3.0.0")
+addSbtPlugin("com.lightbend.paradox" % "sbt-paradox-project-info" % "3.0.1")
 
 licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0"))
 homepage := Some(url("https://github.com/lightbend/sbt-paradox-lightbend-project-info"))
