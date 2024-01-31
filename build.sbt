@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "2.12.17"
+ThisBuild / scalaVersion := "2.12.18"
 
 sbtPlugin := true
 
@@ -49,9 +49,7 @@ ThisBuild / githubWorkflowPublish := Seq(
   )
 )
 
-ThisBuild / test / publishArtifact := false
-ThisBuild / pomIncludeRepository   := (_ => false)
-sonatypeProfileName                := "com.lightbend"
+sonatypeProfileName := "com.lightbend"
 
 ThisBuild / githubWorkflowJavaVersions := List(
   JavaSpec.temurin("11"),
